@@ -1,0 +1,23 @@
+[project]
+name = "wifi_app"
+version = "1.0.0"
+description = "Network tool built with Flet"
+requires-python = ">=3.10"
+
+dependencies = [
+    "flet>=0.21.0",
+    "speedtest-cli",
+    "pandas",
+    "PyPDF2"
+]
+
+[tool.flet]
+entrypoint = "main.py"
+
+[tool.flet.app]
+name = "WiFi Tool"
+icon = "assets/image.png"
+assets_dir = "assets"
+
+[tool.flet.build]
+apk = true
